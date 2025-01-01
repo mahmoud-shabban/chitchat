@@ -1,3 +1,3 @@
-module github.com/mhamoud-shabban/chitchat/data
+module github.com/mahmoud-shabban/chitchat/data
 
 go 1.23.1
