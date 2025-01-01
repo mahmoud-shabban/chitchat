@@ -4,7 +4,7 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/mahmoud-shabban/chitchat/data"
+	"github.com/mhamoud-shabban/chitchat/data"
 )
 
 func index(w http.ResponseWriter, r *http.Request) {
