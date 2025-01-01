@@ -1,3 +1,3 @@
-module github.com/mhamoud-shabban/chitchat
+module chitchat
 
 go 1.23.1
