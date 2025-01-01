@@ -1,9 +1,10 @@
 package main
 
 import (
-	"data"
 	"html/template"
 	"net/http"
+
+	"github.com/mahmoud-shabban/chitchat/data"
 )
 
 func index(w http.ResponseWriter, r *http.Request) {
