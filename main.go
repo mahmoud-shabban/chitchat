@@ -14,7 +14,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 	templates := template.Must(template.ParseFiles(files...))
 
-	threads, err := data.Treads()
+	threads, err := data.Threads()
 	if err == nil {
 		templates.ExecuteTemplate(w, "layout", threads)
 	}
@@ -31,7 +31,7 @@ func main() {
 	files := http.FileServer(http.Dir("./static"))
 
 	mux.Handle("/static/", http.StripPrefix("/static/", files))
-	// mux.HandleFunc("/", index)
+	mux.HandleFunc("/", index)
 
 	server.ListenAndServe()
 }
